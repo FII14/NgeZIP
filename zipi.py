@@ -1,9 +1,6 @@
 import zipfile
 import os.path
-
-
 file_zip = input("Masukan nama file zip: ")
-
 if(os.path.isfile(file_zip)):
     if file_zip.endswith(".zip"):
         file_wordlist = input("Masukan nama file wordlist: ")
