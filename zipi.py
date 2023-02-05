@@ -1,5 +1,15 @@
 import zipfile
 import os.path
+print("""
+#####################################
+# d88888D d888888b d8888b. d888888b #
+# YP  d8'   `88'   88  `8D   `88'   #
+#    d8'     88    88oodD'    88    #
+#   d8'      88    88~~~      88    #
+#  d8' db   .88.   88        .88.   #
+# d88888P Y888888P 88      Y888888P # 
+############### FII14 ###############                                
+""")
 file_zip = input("Masukan nama file zip: ")
 if(os.path.isfile(file_zip)):
     if file_zip.endswith(".zip"):
