@@ -7,6 +7,9 @@ import time
 from colorama import Fore
 b=Fore.LIGHTBLUE_EX
 r=Fore.RESET
+h=Fore.LIGHTGREEN_EX
+k=Fore.LIGHTYELLOW_EX
+m=Fore.LIGHTRED_EX
 print(f"""{b}
 #####################################
 # d88888D d888888b d8888b. d888888b #
@@ -34,7 +37,7 @@ if(os.path.isfile(file_zip)):
                             break
                         except:
                             time.sleep(1)
-                            print(f"[!] Mencoba kata sandi: {kata_sandi}")
+                            print(f"{k}[!] Mencoba kata sandi: {kata_sandi}{r}")
                     else:
                         print("[INFO] Kata sandi tidak ditemukan dalam file wordlist.\n")
         else:
