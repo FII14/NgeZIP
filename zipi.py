@@ -20,7 +20,7 @@ print(f"""{p}
 #   {b}d8'      88    88~~~      88    {p}#
 #  {b}d8' db   .88.   88        .88.   {p}#
 # {b}d88888P Y888888P 88      Y888888P {p}# 
-############### {k}FII14 {b}###############
+############### {k}FII14 {p}###############
 {r}""")
 file_zip = input(f"{p}[{c}»{p}] {c}Masukan nama file zip: ")
 if(os.path.isfile(file_zip)):
