@@ -12,14 +12,14 @@ k=Fore.LIGHTYELLOW_EX
 m=Fore.LIGHTRED_EX
 c=Fore.LIGHTCYAN_EX
 p=Fore.LIGHTWHITE_EX
-print(f"""{b}
+print(f"""{p}
 #####################################
-# d88888D d888888b d8888b. d888888b #
-# YP  d8'   `88'   88  `8D   `88'   #
-#    d8'     88    88oodD'    88    #
-#   d8'      88    88~~~      88    #
-#  d8' db   .88.   88        .88.   #
-# d88888P Y888888P 88      Y888888P # 
+# {b}d88888D d888888b d8888b. d888888b {p}#
+# {b}YP  d8'   `88'   88  `8D   `88'   {p}#
+#    {b}d8'     88    88oodD'    88    {p}#
+#   {b}d8'      88    88~~~      88    {p}#
+#  {b}d8' db   .88.   88        .88.   {p}#
+# {b}d88888P Y888888P 88      Y888888P {p}# 
 ############### {k}FII14 {b}###############
 {r}""")
 file_zip = input(f"{p}[{c}»{p}] {c}Masukan nama file zip: ")
