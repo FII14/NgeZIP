@@ -1,19 +1,14 @@
 import zipfile
+import os.path
 
-try:
-    file_zip = input("Masukan nama file zip: ")
 
-except FileNotFoundError:
-    print("Kesalahan: file {file_zip} tidak ditemukan.")
+file_zip = input("Masukan nama file zip: ")
 
-else:
-    try:
-        wordlist_file = input("Masukan nama file wordlist: ")
+if os.path.isfile(file_zip):
+    wordlist_file = input("Masukan nama file wordlist: ")
 
-    except FileNotFoundError:
-        print(f"Kesalahan: file {wordlist_file} tidak ditemukan.")
-
-    else:
+    if os.path.isfile(wordlist_file):
+        
         with zipfile.ZipFile(file_zip, "r") as fz:
             with open(file_woedlist, "r") as fw:
                 for baris in fw:
@@ -25,4 +20,5 @@ else:
                     except:
                         print(f"Mencoba kata sandi: {kata_sandi}")
         print("Kata sandi tidak ditemukan dalam file wordlist.")
+
 
