@@ -1,3 +1,6 @@
+# Program: Memecahkan kata sandi file zip
+# Pembuat: FII14 
+
 import zipfile
 import os.path
 import time
