@@ -26,6 +26,7 @@ if(os.path.isfile(file_zip)):
                         kata_sandi = baris.strip()
                         try:
                             fz.extractall(pwd=bytes(kata_sandi, "utf-8"))
+                            time.sleep(1)
                             print(f"[INFO] Kata sandi ditemukan: {kata_sandi}\n")
                             break
                         except:
