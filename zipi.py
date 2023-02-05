@@ -8,7 +8,7 @@ print("""
 #   d8'      88    88~~~      88    #
 #  d8' db   .88.   88        .88.   #
 # d88888P Y888888P 88      Y888888P # 
-############### FII14 ###############                                
+############### FII14 ###############
 """)
 file_zip = input("Masukan nama file zip: ")
 if(os.path.isfile(file_zip)):
