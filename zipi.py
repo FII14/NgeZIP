@@ -10,10 +10,11 @@ print("""
 # d88888P Y888888P 88      Y888888P # 
 ############### FII14 ###############
 """)
-file_zip = input("Masukan nama file zip: ")
+file_zip = input("[»] Masukan nama file zip: ")
 if(os.path.isfile(file_zip)):
     if file_zip.endswith(".zip"):
-        file_wordlist = input("Masukan nama file wordlist: ")
+        time.sleep(1)
+        file_wordlist = input("[»] Masukan nama file wordlist: ")
         if(os.path.isfile(file_wordlist)):
             with zipfile.ZipFile(file_zip, "r") as fz:
                 with open(file_wordlist, "r") as fw:
@@ -28,8 +29,11 @@ if(os.path.isfile(file_zip)):
                     else:
                         print("[INFO] Kata sandi tidak ditemukan dalam file wordlist.\n")
         else:
+            time.sleep(3)
             print(f"File {wordlist_file} tidak ditemukan.\n")
     else:
+        time.sleep(3)
         print(f"File {file_zip} bukan file zip.\n")
 else:
+    time.sleep(3)
     print(f"File {file_zip} tidak ditemukan.\n")
