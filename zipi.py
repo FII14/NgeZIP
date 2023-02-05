@@ -11,6 +11,7 @@ h=Fore.LIGHTGREEN_EX
 k=Fore.LIGHTYELLOW_EX
 m=Fore.LIGHTRED_EX
 c=Fore.LIGHTCYAN_EX
+p=Fore.LIGHTWHITE_EX
 print(f"""{b}
 #####################################
 # d88888D d888888b d8888b. d888888b #
