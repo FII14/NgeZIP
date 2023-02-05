@@ -35,13 +35,13 @@ if(os.path.isfile(file_zip)):
                         try:
                             fz.extractall(pwd=bytes(kata_sandi, "utf-8"))
                             time.sleep(1)
-                            print(f"{p}[{h}INFO{p}] Kata sandi ditemukan: {kata_sandi}{r}\n")
+                            print(f"{p}[{h}INFO{p}] {h}Kata sandi ditemukan: {kata_sandi}{r}\n")
                             break
                         except:
                             time.sleep(1)
-                            print(f"{k}[!] Mencoba kata sandi: {kata_sandi}{r}")
+                            print(f"{p}[{k}!{p}] {k}Mencoba kata sandi: {kata_sandi}{r}")
                     else:
-                        print(f"{p}[{m}INFO{p}] Kata sandi tidak ditemukan dalam file wordlist.{r}\n")
+                        print(f"{p}[{m}INFO{p}] {m}Kata sandi tidak ditemukan dalam file wordlist.{r}\n")
         else:
             time.sleep(3)
             print(f"[INFO] File {file_wordlist} tidak ditemukan.\n")
