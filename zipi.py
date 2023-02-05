@@ -4,7 +4,7 @@ import os.path
 
 file_zip = input("Masukan nama file zip: ")
 
-if(os.path.isfile(file_zip) and file_zip.endswith(".zip")):
+if(os.path.isfile(file_zip) && file_zip.endswith(".zip")):
     file_wordlist = input("Masukan nama file wordlist: ")
 
     if(os.path.isfile(file_wordlist)):
