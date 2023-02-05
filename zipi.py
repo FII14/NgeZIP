@@ -5,12 +5,12 @@ import os.path
 file_zip = input("Masukan nama file zip: ")
 
 if(os.path.isfile(file_zip)):
-    wordlist_file = input("Masukan nama file wordlist: ")
+    file_wordlist = input("Masukan nama file wordlist: ")
 
-    if(os.path.isfile(wordlist_file)):
+    if(os.path.isfile(file_wordlist)):
         
         with zipfile.ZipFile(file_zip, "r") as fz:
-            with open(file_woedlist, "r") as fw:
+            with open(file_wordlist, "r") as fw:
                 for baris in fw:
                     kata_sandi = baris.strip()
                     try:
