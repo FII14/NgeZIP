@@ -30,10 +30,10 @@ if(os.path.isfile(file_zip)):
                         print("[INFO] Kata sandi tidak ditemukan dalam file wordlist.\n")
         else:
             time.sleep(3)
-            print(f"File {wordlist_file} tidak ditemukan.\n")
+            print(f"[INFO] File {wordlist_file} tidak ditemukan.\n")
     else:
         time.sleep(3)
-        print(f"File {file_zip} bukan file zip.\n")
+        print(f"[INFO] File {file_zip} bukan file zip.\n")
 else:
     time.sleep(3)
-    print(f"File {file_zip} tidak ditemukan.\n")
+    print(f"[INFO] File {file_zip} tidak ditemukan.\n")
