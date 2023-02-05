@@ -21,15 +21,15 @@ if(os.path.isfile(file_zip)):
                         kata_sandi = baris.strip()
                         try:
                             fz.extractall(pwd=bytes(kata_sandi, "utf-8"))
-                            print(f"Kata sandi ditemukan: {kata_sandi}")
+                            print(f"Kata sandi ditemukan: {kata_sandi}\n")
                             break
                         except:
                             print(f"Mencoba kata sandi: {kata_sandi}")
                     else:
-                        print("Kata sandi tidak ditemukan dalam file wordlist.")
+                        print("Kata sandi tidak ditemukan dalam file wordlist.\n")
         else:
-            print(f"File {wordlist_file} tidak ditemukan.")
+            print(f"File {wordlist_file} tidak ditemukan.\n")
     else:
-        print(f"File {file_zip} bukan file zip.")
+        print(f"File {file_zip} bukan file zip.\n")
 else:
-    print(f"File {file_zip} tidak ditemukan.")
+    print(f"File {file_zip} tidak ditemukan.\n")
