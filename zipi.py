@@ -25,8 +25,5 @@ if(os.path.isfile(file_zip) and file_zip.endswith(".zip")):
     else:
         print(f"File {wordlist_file} tidak ditemukan.")
 
-elif(file_zip.endswith != ".zip"):
-    print(f"File {file_zip} bukan file zip.")
-
 else:
     print(f"File {file_zip} tidak ditemukan.")
