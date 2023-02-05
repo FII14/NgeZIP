@@ -44,10 +44,10 @@ if(os.path.isfile(file_zip)):
                         print(f"{p}[{m}INFO{p}] {m}Kata sandi tidak ditemukan dalam file wordlist.{r}\n")
         else:
             time.sleep(3)
-            print(f"[INFO] File {file_wordlist} tidak ditemukan.\n")
+            print(f"{p}[{m}INFO{p}] {m}File {file_wordlist} tidak ditemukan.{r}\n")
     else:
         time.sleep(3)
-        print(f"[INFO] File {file_zip} bukan file zip.\n")
+        print(f"{m}[{m}INFO{p}] {m}File {file_zip} bukan file zip.{r}\n")
 else:
     time.sleep(3)
-    print(f"[INFO] File {file_zip} tidak ditemukan.\n")
+    print(f"{p}[{m}INFO{p}] {m}File {file_zip} tidak ditemukan.{r}\n")
