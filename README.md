@@ -1,5 +1,7 @@
 # ZIPI
 
+![](https://github.com/FII14/ZIPI/blob/main/gambar/IMG_20230207_203708.jpg)
+
 Program python sederhana untuk memecahkan kata sandi file zip menggunakan wordlist.
 
 ## Cara menginstal
