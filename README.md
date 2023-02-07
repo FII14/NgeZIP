@@ -4,6 +4,8 @@ Program python sederhana untuk memecahkan kata sandi file zip menggunakan wordli
 
 ## Cara menginstal
 
+Berikut ini adalah langkah-langkah untuk menginstal ZIPI.
+
 ```
 apt-get update -y
 apt-get install python3-pip -y
