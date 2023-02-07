@@ -4,9 +4,16 @@
 
 Program python sederhana untuk memecahkan kata sandi file zip menggunakan wordlist.
 
+## Persyaratan
+
+Berikut ini adalah persyaratan-persyaratan untuk menginstal ZIPI:
+
+- Sistem operasi Linux Debian (dan keturunannya)
+- Koneksi internet
+
 ## Cara menginstal
 
-Berikut ini adalah langkah-langkah untuk menginstal ZIPI.
+Berikut ini adalah langkah-langkah untuk menginstal ZIPI:
 
 ```
 apt-get update -y
