@@ -8,8 +8,8 @@ Program python sederhana untuk memecahkan kata sandi file zip menggunakan wordli
 
 Berikut ini adalah persyaratan-persyaratan untuk menginstal ZIPI:
 
-- Sistem operasi Linux Debian (dan keturunannya)
-- Koneksi internet
+- Sistem operasi Linux Debian (dan keturunannya).
+- Koneksi internet yang lancar.
 
 ## Cara menginstal
 
