@@ -22,11 +22,11 @@ print(f"""{p}
 # {b}d88888P Y888888P 88      Y888888P {p}# 
 ############### {k}FII14 {p}###############
 {r}""")
-file_zip = input(f"{p}[{c}»{p}] {c}Masukan nama file zip: ")
+file_zip = input(f"{p}[{c}»{p}] {c}Masukan nama file zip{p}: {c}")
 if(os.path.isfile(file_zip)):
     if file_zip.endswith(".zip"):
         time.sleep(1)
-        file_wordlist = input(f"{p}[{c}»{p}] {c}Masukan nama file wordlist: ")
+        file_wordlist = input(f"{p}[{c}»{p}] {c}Masukan nama file wordlist{p}: {c}")
         if(os.path.isfile(file_wordlist)):
             with zipfile.ZipFile(file_zip, "r") as fz:
                 with open(file_wordlist, "r") as fw:
