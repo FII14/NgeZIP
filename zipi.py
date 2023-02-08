@@ -47,7 +47,7 @@ if(os.path.isfile(file_zip)):
             print(f"{p}[{m}INFO{p}] {m}File {file_wordlist} tidak ditemukan.{r}\n")
     else:
         time.sleep(3)
-        print(f"{m}[{m}INFO{p}] {m}File {file_zip} bukan file zip.{r}\n")
+        print(f"{p}[{m}INFO{p}] {m}File {file_zip} bukan file zip.{r}\n")
 else:
     time.sleep(3)
     print(f"{p}[{m}INFO{p}] {m}File {file_zip} tidak ditemukan.{r}\n")
