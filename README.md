@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Dibuat%20menggunakan%20-Python3%20-blue)
+![](https://img.shields.io/badge/Pemeliharaan%20-Iya%20-lightgreen)
 # ZIPI
 
 ZIPI adalah program python sederhana untuk memecahkan kata sandi file zip menggunakan wordlist.
