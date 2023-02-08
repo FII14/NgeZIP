@@ -1,15 +1,16 @@
 ![](https://img.shields.io/badge/Dibuat%20menggunakan%20-Python3%20-blue)
 ![](https://img.shields.io/badge/Pemeliharaan%20-Iya%20-lightgreen)
+
 # ZIPI
 
-ZIPI adalah program python sederhana untuk memecahkan kata sandi file zip menggunakan wordlist.
+ZIPI adalah program Python sederhana untuk memecahkan kata sandi file zip menggunakan wordlist.
 
 ## Persyaratan
 
 Berikut ini adalah persyaratan-persyaratan untuk menginstal ZIPI:
 
 - Sistem operasi Linux Debian (dan keturunannya).
-- Koneksi internet yang lancar.
+- Koneksi internet.
 
 ## Cara menginstal
 
