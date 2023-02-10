@@ -39,7 +39,7 @@ if(os.path.isfile(file_zip)):
                             break
                         except:
                             time.sleep(1)
-                            print(f"{p}[{k}!{p}] {b}Mencoba kata sandi{p}: {k}{kata_sandi}{r}")
+                            print(f"{p}[{k}!{p}] Mencoba kata sandi{p}: {k}{kata_sandi}{r}")
                     else:
                         print(f"{p}[{m}INFO{p}] {m}Kata sandi tidak ditemukan dalam file wordlist.{r}\n")
         else:
