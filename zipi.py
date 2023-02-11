@@ -41,7 +41,7 @@ if(os.path.isfile(file_zip)):
                             print("-----------------------------------------\n")
                             break
                         except:
-                            time.sleep(1)
+                            time.sleep(0.1)
                             print(f"[!] Mencoba kata sandi: {kata_sandi}")
                     else:
                         print(f"[INFO] Kata sandi tidak ditemukan dalam file wordlist {file_wordlist}.\n")
