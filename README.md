@@ -30,3 +30,5 @@ cd ZIPI
 chmod +x instal.sh
 ./instal.sh
 ```
+
+> Pemberitahuan: Kata sandi dapat ditemukan tergantung dengan wordlist yang kamu gunakan.
