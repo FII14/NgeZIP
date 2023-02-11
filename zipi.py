@@ -33,8 +33,8 @@ if(os.path.isfile(file_zip)):
                             fz.extractall(pwd=bytes(kata_sandi, "utf-8"))
                             time.sleep(0.1)
                             print("[INFO]")
-                            for nama_file in fz.namelist():
-                                print("-------------- ISI FILE ZIP -------------")
+                            print("-------------- ISI FILE ZIP -------------")
+                            for nama_file in fz.namelist():                             
                                 print(f"[+] {nama_file}")
                             print("---------- KATA SANDI FILE ZIP ----------")
                             print(f"[+] {kata_sandi}")
