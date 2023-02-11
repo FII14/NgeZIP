@@ -3,8 +3,6 @@
 
 # ZIPI
 
-![](https://github.com/FII14/ZIPI/blob/main/gambar/20230209_222252.jpg)
-
 ZIPI adalah program Python sederhana untuk memecahkan kata sandi file zip menggunakan wordlist.
 
 ## Persyaratan
