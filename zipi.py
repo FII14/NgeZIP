@@ -4,9 +4,6 @@
 import zipfile
 import os.path
 import time
-import os
-
-os.system("clear")
 
 print(f"""
 #####################################
