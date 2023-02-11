@@ -31,7 +31,7 @@ if(os.path.isfile(file_zip)):
                         kata_sandi = baris.strip()
                         try:
                             fz.extractall(pwd=bytes(kata_sandi, "utf-8"))
-                            time.sleep(1)
+                            time.sleep(0.1)
                             print("[INFO]")
                             for nama_file in fz.namelist():
                                 print("-------------- ISI FILE ZIP -------------")
