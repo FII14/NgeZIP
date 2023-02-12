@@ -6,7 +6,7 @@
 ![](https://github.com/FII14/ZIPI/blob/main/gambar/20230212_013520.jpg)
 
 <p align="center">
-  [ <a href="$">ZIPI</a> | <a href="$">Persyaratan</a> | <a href="$">Cara menginstal</a> ]
+  [ <a href="https://github.com/FII14/ZIPI#zipi">ZIPI</a> | <a href="https://github.com/FII14/ZIPI#Persyaratan">Persyaratan</a> | <a href="$lhttps://github.com/FII14/ZIPI#Cara menginstal">Cara menginstal</a> ]
 </p>
 
 ZIPI adalah program Python sederhana untuk memecahkan kata sandi file zip menggunakan wordlist.
