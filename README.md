@@ -4,3 +4,4 @@
 
 ZIPI adalah program Python sederhana untuk memecahkan kata sandi file zip menggunakan wordlist.
 
+Dokumentasi ZIPI [klik disini](https://github.com/FII14/ZIPI/wiki).
