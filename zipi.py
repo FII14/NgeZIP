@@ -29,23 +29,32 @@
 import zipfile
 import os.path
 import time
+import os
+from colorama import Fore as f
+
+m=f.LIGHTRED_EX
+p=f.LIGHTWHITE_EX
+k=f.LIGHTYELLOW_EX
+r=f.RESET
+b=f.LIGHTBLUE_EX
+c=f.LIGHTCYAN_EX
+h=f.LIGHTGREEN_EX
+
+os.system("clear")
 
 print(f"""
-#####################################
-# d88888D d888888b d8888b. d888888b #
-# YP  d8'   `88'   88  `8D   `88'   #
-#    d8'     88    88oodD'    88    #
-#   d8'      88    88~~~      88    #
-#  d8' db   .88.   88        .88.   #
-# d88888P Y888888P 88      Y888888P #
-############### FII14 ###############
+{m} _   _  ____ _____ ________ ____   {r}{k} 
+{m}| \ | |/ ___| ____|__  /_ _|  _ \  {r}{k}Program {r}| {k}Memecahkan kata sandi file zip{r}
+{m}|  \| | |  _|  _|   / / | || |_) | {r}{k}Pembuat {r}| {k}Rofi{r}
+{p}| |\  | |_| | |___ / /_ | ||  __/  {r}{k}Github  {r}| {k}https://github.com/FII14/ngezip{r}
+{p}|_| \_|\____|_____/____|___|_|     {r}{k}E-mail  {r}| {k}rofikun14122003@gmail.com{r}
 """)
 
-file_zip = input("[»] Masukan nama file zip: ")
+file_zip = input(f"{p}[{b}»{p}] Masukan nama file zip: ")
 if(os.path.isfile(file_zip)):
     if file_zip.endswith(".zip"):
         time.sleep(1)
-        file_wordlist = input("[»] Masukan nama file wordlist: ")
+        file_wordlist = input(f"{p}[{b}»{p}] Masukan nama file wordlist: ")
         if(os.path.isfile(file_wordlist)):
             with zipfile.ZipFile(file_zip, "r") as fz:
                 with open(file_wordlist, "r") as fw:
@@ -54,25 +63,25 @@ if(os.path.isfile(file_zip)):
                         try:
                             fz.extractall(pwd=bytes(kata_sandi, "utf-8"))
                             time.sleep(0.1)
-                            print("[INFO]")
-                            print("-------------- ISI FILE ZIP -------------")
+                            print(f"{p}[{c}INFO{p}]{r}")
+                            print(f"{p}-------------- {h}ISI FILE ZIP {p}-------------{r}")
                             for nama_file in fz.namelist():                             
-                                print(f"[+] {nama_file}")
-                            print("---------- KATA SANDI FILE ZIP ----------")
-                            print(f"[+] {kata_sandi}")
-                            print("-----------------------------------------\n")
+                                print(f"{p}[{h}+{p}] {nama_file}{r}")
+                            print(f"{p}---------- {h}KATA SANDI FILE ZIP {p}----------{r}")
+                            print(f"{p}[{h}+{p}] {kata_sandi}{r}")
+                            print(f"{p}-----------------------------------------{r}\n")
                             break
                         except:
                             time.sleep(0.1)
-                            print(f"[!] Mencoba kata sandi: {kata_sandi}")
+                            print(f"{p}[{m}!{p}] {k}Mencoba kata sandi{r}: {m}{kata_sandi}{r}")
                     else:
-                        print(f"[INFO] Kata sandi tidak ditemukan dalam file wordlist {file_wordlist}.\n")
+                        print(f"{p}[{c}INFO{p}] {m}Kata sandi tidak ditemukan dalam file wordlist {file_wordlist}.{r}\n")
         else:
             time.sleep(3)
-            print(f"[INFO] File {file_wordlist} tidak ditemukan.\n")
+            print(f"{p}[{c}INFO{p}] {m}File {file_wordlist} tidak ditemukan.{r}\n")
     else:
         time.sleep(3)
-        print(f"[INFO] File {file_zip} bukan file zip.\n")
+        print(f"{p}[{c}INFO{p}] {m}File {file_zip} bukan file zip.{r}\n")
 else:
     time.sleep(3)
-    print(f"[INFO] File {file_zip} tidak ditemukan.\n")
+    print(f"{p}[{c}INFO{p}] {m}File {file_zip} tidak ditemukan.{r}\n")
