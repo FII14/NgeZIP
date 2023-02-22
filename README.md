@@ -4,6 +4,8 @@
 
 # ngezip
 
+![ngezip](https://github.com/FII14/ngezip/blob/main/gambar/20230222_223400.jpg)
+
 ngezip adalah program Python3 sederhana untuk memecahkan kata sandi file zip menggunakan Wordlist.
 
 ## PEMBERITAHUAN HUKUM
