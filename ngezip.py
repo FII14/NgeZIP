@@ -1,87 +1,101 @@
-# Program: Memecahkan kata sandi file zip
-# Pembuat: FII14
-
-###################################################################################################################################
-# Lisensi MIT                                                                                                                     #
-#                                                                                                                                 #
-# Hak Cipta (c) 2023 FII14                                                                                                        #
-#                                                                                                                                 #
-# Dengan ini diberikan izin, secara gratis, kepada siapa pun yang mendapatkan salinan                                             #
-# perangkat lunak ini dan file dokumentasi terkait ("Perangkat Lunak"), untuk bertransaksi                                        #
-# dalam Perangkat Lunak tanpa batasan, termasuk namun tidak terbatas pada hak                                                     #
-#                                                                                                                                 #          
-# untuk menggunakan, menyalin, memodifikasi, menggabungkan, mempublikasikan, mendistribusikan, mensublisensikan, dan/atau menjual #
-# salinan Perangkat Lunak, dan untuk mengizinkan orang yang menerima Perangkat Lunak.                                             #
-# yang diberikan Perangkat Lunak untuk melakukan hal tersebut, dengan tunduk pada ketentuan-ketentuan berikut:                    #
-#                                                                                                                                 #
-# Pemberitahuan hak cipta di atas dan pemberitahuan izin ini harus disertakan dalam semua                                         #
-# salinan atau bagian penting dari Perangkat Lunak.                                                                               #
-#                                                                                                                                 #
-# PERANGKAT LUNAK INI DISEDIAKAN "SEBAGAIMANA ADANYA", TANPA JAMINAN APA PUN, TERSURAT MAUPUN                                     #
-# TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA JAMINAN DAPAT DIPERJUALBELIKAN,                                    #
-# KESESUAIAN UNTUK TUJUAN TERTENTU DAN NON-PELANGGARAN. DALAM HAL APA PUN                                                         #
-# PENULIS ATAU PEMEGANG HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS KLAIM, KERUSAKAN, ATAU                                             #
-# TANGGUNG JAWAB, BAIK DALAM TINDAKAN KONTRAK, KESALAHAN ATAU LAINNYA, YANG TIMBUL DARI,                                          #
-# DARI ATAU SEHUBUNGAN DENGAN PERANGKAT LUNAK ATAU PENGGUNAAN ATAU TRANSAKSI LAIN DALAM                                           #
-# PERANGKAT LUNAK.                                                                                                                #
-###################################################################################################################################
-
-import zipfile
-import os.path
-import time
-import os
-from colorama import Fore as f
-
-m=f.LIGHTRED_EX
-p=f.LIGHTWHITE_EX
-k=f.LIGHTYELLOW_EX
-r=f.RESET
-b=f.LIGHTBLUE_EX
-c=f.LIGHTCYAN_EX
-h=f.LIGHTGREEN_EX
-
-os.system("clear")
-
-print(f"""
-{m} _   _  ____ _____ ________ ____   {r}{k} 
-{m}| \ | |/ ___| ____|__  /_ _|  _ \  {r}{k}Program {r}| {k}Memecahkan kata sandi file zip{r}
-{m}|  \| | |  _|  _|   / / | || |_) | {r}{k}Pembuat {r}| {k}Rofi{r}
-{p}| |\  | |_| | |___ / /_ | ||  __/  {r}{k}Github  {r}| {k}https://github.com/FII14/ngezip{r}
-{p}|_| \_|\____|_____/____|___|_|     {r}{k}E-mail  {r}| {k}rofikun14122003@gmail.com{r}
-""")
-
-file_zip = input(f"{p}[{b}»{p}] Masukan nama file zip: ")
-if(os.path.isfile(file_zip)):
-    if file_zip.endswith(".zip"):
-        time.sleep(1)
-        file_wordlist = input(f"{p}[{b}»{p}] Masukan nama file wordlist: ")
-        if(os.path.isfile(file_wordlist)):
-            with zipfile.ZipFile(file_zip, "r") as fz:
-                with open(file_wordlist, "r") as fw:
-                    for baris in fw:
-                        kata_sandi = baris.strip()
-                        try:
-                            fz.extractall(pwd=bytes(kata_sandi, "utf-8"))
-                            time.sleep(0.1)
-                            print(f"{p}[{c}INFO{p}]{r}")
-                            print(f"{p}-------------- {h}ISI FILE ZIP {p}-------------{r}")
-                            for nama_file in fz.namelist():                             
-                                print(f"{p}[{h}+{p}] {nama_file}{r}")
-                            print(f"{p}---------- {h}KATA SANDI FILE ZIP {p}----------{r}")
-                            print(f"{p}[{h}+{p}] {kata_sandi}{r}")
-                            print(f"{p}-----------------------------------------{r}\n")
-                            break
-                        except:
-                            time.sleep(0.1)
-                            print(f"{p}[{m}!{p}] {k}Mencoba kata sandi{r}: {m}{kata_sandi}{r}")
-                    else:
-                        print(f"{p}[{c}INFO{p}] {m}Kata sandi tidak ditemukan dalam file wordlist {file_wordlist}.{r}\n")
-        else:
-            time.sleep(3)
-            print(f"{p}[{c}INFO{p}] {m}File {file_wordlist} tidak ditemukan.{r}\n")
-    else:
-        time.sleep(3)
-        print(f"{p}[{c}INFO{p}] {m}File {file_zip} bukan file zip.{r}\n")
-else:
-    time.sleep(3)
-    print(f"{p}[{c}INFO{p}] {m}File {file_zip} tidak ditemukan.{r}\n")
+IyEvdXNyL2Jpbi9lbnYgcHl0aG9uCgojIFByb2dyYW06IE1lbWVjYWhrYW4ga2F0YSBzYW5kaSBm
+aWxlIHppcAojIFBlbWJ1YXQ6IEZJSTE0CgojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwojIExpc2Vuc2kgTUlU
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIwojICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIwojIEhhayBDaXB0YSAoYykgMjAyMyBGSUkxNCAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIwojICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IwojIERlbmdhbiBpbmkgZGliZXJpa2FuIGl6aW4sIHNlY2FyYSBncmF0aXMsIGtlcGFkYSBzaWFw
+YSBwdW4geWFuZyBtZW5kYXBhdGthbiBzYWxpbmFuICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIwojIHBlcmFuZ2thdCBsdW5hayBpbmkgZGFuIGZpbGUgZG9rdW1l
+bnRhc2kgdGVya2FpdCAoIlBlcmFuZ2thdCBMdW5hayIpLCB1bnR1ayBiZXJ0cmFuc2Frc2kgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIwojIGRhbGFtIFBlcmFuZ2thdCBM
+dW5hayB0YW5wYSBiYXRhc2FuLCB0ZXJtYXN1ayBuYW11biB0aWRhayB0ZXJiYXRhcyBwYWRhIGhh
+ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIwoj
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgIyAgICAgICAgICAKIyB1bnR1ayBtZW5nZ3VuYWthbiwgbWVueWFsaW4s
+IG1lbW9kaWZpa2FzaSwgbWVuZ2dhYnVuZ2thbiwgbWVtcHVibGlrYXNpa2FuLCBtZW5kaXN0cmli
+dXNpa2FuLCBtZW5zdWJsaXNlbnNpa2FuLCBkYW4vYXRhdSBtZW5qdWFsICMKIyBzYWxpbmFuIFBl
+cmFuZ2thdCBMdW5haywgZGFuIHVudHVrIG1lbmdpemlua2FuIG9yYW5nIHlhbmcgbWVuZXJpbWEg
+UGVyYW5na2F0IEx1bmFrLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICMKIyB5YW5nIGRpYmVyaWthbiBQZXJhbmdrYXQgTHVuYWsgdW50dWsgbWVsYWt1a2FuIGhh
+bCB0ZXJzZWJ1dCwgZGVuZ2FuIHR1bmR1ayBwYWRhIGtldGVudHVhbi1rZXRlbnR1YW4gYmVyaWt1
+dDogICAgICAgICAgICAgICAgICAgICMKIyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMKIyBQZW1iZXJpdGFodWFu
+IGhhayBjaXB0YSBkaSBhdGFzIGRhbiBwZW1iZXJpdGFodWFuIGl6aW4gaW5pIGhhcnVzIGRpc2Vy
+dGFrYW4gZGFsYW0gc2VtdWEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICMKIyBzYWxpbmFuIGF0YXUgYmFnaWFuIHBlbnRpbmcgZGFyaSBQZXJhbmdrYXQgTHVuYWsuICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICMKIyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMKIyBQRVJBTkdLQVQgTFVOQUsg
+SU5JIERJU0VESUFLQU4gIlNFQkFHQUlNQU5BIEFEQU5ZQSIsIFRBTlBBIEpBTUlOQU4gQVBBIFBV
+TiwgVEVSU1VSQVQgTUFVUFVOICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMK
+IyBURVJTVVJBVCBNQVVQVU4gVEVSU0lSQVQsIFRFUk1BU1VLIE5BTVVOIFRJREFLIFRFUkJBVEFT
+IFBBREEgSkFNSU5BTiBEQVBBVCBESVBFUkpVQUxCRUxJS0FOLCAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICMKIyBLRVNFU1VBSUFOIFVOVFVLIFRVSlVBTiBURVJURU5UVSBEQU4g
+Tk9OLVBFTEFOR0dBUkFOLiBEQUxBTSBIQUwgQVBBIFBVTiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMKIyBQRU5VTElTIEFUQVUgUEVNRUdB
+TkcgSEFLIENJUFRBIFRJREFLIEJFUlRBTkdHVU5HIEpBV0FCIEFUQVMgS0xBSU0sIEtFUlVTQUtB
+TiwgQVRBVSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMKIyBU
+QU5HR1VORyBKQVdBQiwgQkFJSyBEQUxBTSBUSU5EQUtBTiBLT05UUkFLLCBLRVNBTEFIQU4gQVRB
+VSBMQUlOTllBLCBZQU5HIFRJTUJVTCBEQVJJLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICMKIyBEQVJJIEFUQVUgU0VIVUJVTkdBTiBERU5HQU4gUEVSQU5HS0FUIExV
+TkFLIEFUQVUgUEVOR0dVTkFBTiBBVEFVIFRSQU5TQUtTSSBMQUlOIERBTEFNICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMKIyBQRVJBTkdLQVQgTFVOQUsuICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMKIyMjIyMj
+IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+IyMjIyMjIyMjIyMKCmltcG9ydCB6aXBmaWxlCmltcG9ydCBvcy5wYXRoCmltcG9ydCB0aW1lCmlt
+cG9ydCBvcwpmcm9tIGNvbG9yYW1hIGltcG9ydCBGb3JlIGFzIGYKCm09Zi5MSUdIVFJFRF9FWApw
+PWYuTElHSFRXSElURV9FWAprPWYuTElHSFRZRUxMT1dfRVgKcj1mLlJFU0VUCmI9Zi5MSUdIVEJM
+VUVfRVgKYz1mLkxJR0hUQ1lBTl9FWApoPWYuTElHSFRHUkVFTl9FWAoKb3Muc3lzdGVtKCJjbGVh
+ciIpCgpwcmludChmIiIiCnttfSBfICAgXyAgX19fXyBfX19fXyBfX19fX19fXyBfX19fICAge3J9
+e2t9IAp7bX18IFwgfCB8LyBfX198IF9fX198X18gIC9fIF98ICBfIFwgIHtyfXtrfVByb2dyYW0g
+e3J9fCB7Y31NZW1lY2Foa2FuIGthdGEgc2FuZGkgZmlsZSB6aXB7cn0Ke219fCAgXHwgfCB8ICBf
+fCAgX3wgICAvIC8gfCB8fCB8XykgfCB7cn17a31QZW1idWF0IHtyfXwge2N9Um9maXtyfQp7bX18
+IHxcICB8IHxffCB8IHxfX18gLyAvXyB8IHx8ICBfXy8gIHtyfXtrfUdpdGh1YiAge3J9fCB7Y31o
+dHRwczovL2dpdGh1Yi5jb20vRklJMTQvbmdlemlwe3J9CnttfXxffCBcX3xcX19fX3xfX19fXy9f
+X19ffF9fX3xffCAgICAge3J9e2t9RS1tYWlsICB7cn18IHtjfXJvZmlrdW4xNDEyMjAwM0BnbWFp
+bC5jb217cn0KIiIiKQoKZmlsZV96aXAgPSBpbnB1dChmIntwfVt7Yn3Cu3twfV0gTWFzdWthbiBu
+YW1hIGZpbGUgemlwOiAiKQppZihvcy5wYXRoLmlzZmlsZShmaWxlX3ppcCkpOgogICAgaWYgZmls
+ZV96aXAuZW5kc3dpdGgoIi56aXAiKToKICAgICAgICB0aW1lLnNsZWVwKDEpCiAgICAgICAgZmls
+ZV93b3JkbGlzdCA9IGlucHV0KGYie3B9W3tifcK7e3B9XSBNYXN1a2FuIG5hbWEgZmlsZSB3b3Jk
+bGlzdDogIikKICAgICAgICBpZihvcy5wYXRoLmlzZmlsZShmaWxlX3dvcmRsaXN0KSk6CiAgICAg
+ICAgICAgIHdpdGggemlwZmlsZS5aaXBGaWxlKGZpbGVfemlwLCAiciIpIGFzIGZ6OgogICAgICAg
+ICAgICAgICAgd2l0aCBvcGVuKGZpbGVfd29yZGxpc3QsICJyIikgYXMgZnc6CiAgICAgICAgICAg
+ICAgICAgICAgZm9yIGJhcmlzIGluIGZ3OgogICAgICAgICAgICAgICAgICAgICAgICBrYXRhX3Nh
+bmRpID0gYmFyaXMuc3RyaXAoKQogICAgICAgICAgICAgICAgICAgICAgICB0cnk6CiAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICBmei5leHRyYWN0YWxsKHB3ZD1ieXRlcyhrYXRhX3NhbmRpLCAi
+dXRmLTgiKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoMC4xKQogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoZiJ7cH1be2N9SU5GT3twfV17cn0iKQogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoZiJ7cH0tLS0tLS0tLS0tLS0tLSB7aH1JU0kg
+RklMRSBaSVAge3B9LS0tLS0tLS0tLS0tLXtyfSIpCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICBmb3IgbmFtYV9maWxlIGluIGZ6Lm5hbWVsaXN0KCk6ICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludChmIntwfVt7aH0re3B9
+XSB7bmFtYV9maWxlfXtyfSIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludChmIntw
+fS0tLS0tLS0tLS0ge2h9S0FUQSBTQU5ESSBGSUxFIFpJUCB7cH0tLS0tLS0tLS0te3J9IikKICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KGYie3B9W3tofSt7cH1dIHtrYXRhX3NhbmRp
+fXtyfSIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludChmIntwfS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0te3J9XG4iKQogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgICAgICAgICAgZXhjZXB0OgogICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgdGltZS5zbGVlcCgwLjEpCiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICBwcmludChmIntwfVt7bX0he3B9XSB7a31NZW5jb2JhIGthdGEgc2FuZGl7cn06IHttfXtr
+YXRhX3NhbmRpfXtyfSIpCiAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAg
+ICAgICAgICAgcHJpbnQoZiJ7cH1be2N9SU5GT3twfV0ge219S2F0YSBzYW5kaSB0aWRhayBkaXRl
+bXVrYW4gZGFsYW0gZmlsZSB3b3JkbGlzdCB7ZmlsZV93b3JkbGlzdH0ue3J9XG4iKQogICAgICAg
+IGVsc2U6CiAgICAgICAgICAgIHRpbWUuc2xlZXAoMykKICAgICAgICAgICAgcHJpbnQoZiJ7cH1b
+e2N9SU5GT3twfV0ge219RmlsZSB7ZmlsZV93b3JkbGlzdH0gdGlkYWsgZGl0ZW11a2FuLntyfVxu
+IikKICAgIGVsc2U6CiAgICAgICAgdGltZS5zbGVlcCgzKQogICAgICAgIHByaW50KGYie3B9W3tj
+fUlORk97cH1dIHttfUZpbGUge2ZpbGVfemlwfSBidWthbiBmaWxlIHppcC57cn1cbiIpCmVsc2U6
+CiAgICB0aW1lLnNsZWVwKDMpCiAgICBwcmludChmIntwfVt7Y31JTkZPe3B9XSB7bX1GaWxlIHtm
+aWxlX3ppcH0gdGlkYWsgZGl0ZW11a2FuLntyfVxuIikK
