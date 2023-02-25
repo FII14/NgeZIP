@@ -42,8 +42,6 @@ b=f.LIGHTBLUE_EX
 c=f.LIGHTCYAN_EX
 h=f.LIGHTGREEN_EX
 
-os.system("clear")
-
 print(f"""
 {m} _   _  ____ _____ ________ ____   {r}{k} 
 {m}| \ | |/ ___| ____|__  /_ _|  _ \  {r}{k}Program {r}| {c}Memecahkan kata sandi file zip{r}
