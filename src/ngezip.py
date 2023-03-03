@@ -47,7 +47,7 @@ print(f"""
 {m}| \ | |/ ___| ____|__  /_ _|  _ \  {r}{k}Program {r}| {c}Memecahkan kata sandi file zip{r}
 {m}|  \| | |  _|  _|   / / | || |_) | {r}{k}Pembuat {r}| {c}Rofi{r}
 {m}| |\  | |_| | |___ / /_ | ||  __/  {r}{k}Github  {r}| {c}https://github.com/FII14/ngezip{r}
-{m}|_| \_|\____|_____/____|___|_|     {r}{k}E-mail  {r}| {c}rofikun14122003@gmail.com{r}
+{m}|_| \_|\____|_____/____|___|_|     {r}{k}Team  {r}| {c}Indonesian Backtrack Team{r}
 """)
 
 file_zip = input(f"{p}[{b}»{p}] Masukan nama file zip: ")
