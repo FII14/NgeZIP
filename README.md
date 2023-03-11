@@ -6,6 +6,19 @@
 
 NgeZIP adalah program Python3 sederhana untuk memecahkan kata sandi file zip menggunakan Wordlist.
 
+# Cara memasang
+
+```
+apt-get update -y
+apt-get install python3-pip -y
+apt-get install git -y
+git clone https://github.com/FII14/NgeZIP
+cd NgeZIP/
+pip3 install -r persyaratan.txt
+python3 src/ngezip.py
+
+```
+
 ## PEMBERITAHUAN HUKUM
 
 PERANGKAT LUNAK INI DISEDIAKAN HANYA UNTUK PENGGUNAAN PENDIDIKAN! JIKA ANDA TERLIBAT DALAM AKTIVITAS ILEGAL, PENULIS TIDAK BERTANGGUNG JAWAB ATAS HAL TERSEBUT. DENGAN MENGGUNAKAN PERANGKAT LUNAK INI, ANDA SETUJU DENGAN PERSYARATAN INI.
