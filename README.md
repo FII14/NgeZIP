@@ -4,7 +4,7 @@
 
 # NgeZIP
 
-![](https://github.com/FII14/NgeZIP/blob/main/gambar/IMG_20230312_075927.jpg)
+![](https://github.com/FII14/NgeZIP/blob/main/logo_ngezip.jpg)
 
 NgeZIP adalah program Python3 sederhana untuk memecahkan kata sandi file zip menggunakan Wordlist.
 
