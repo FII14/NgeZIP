@@ -15,7 +15,7 @@ apt-get install git -y
 git clone https://github.com/FII14/NgeZIP
 cd NgeZIP/
 pip3 install -r persyaratan.txt
-python3 src/ngezip.py
+python3 ngezip.py
 
 ```
 
